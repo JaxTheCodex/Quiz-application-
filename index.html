@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strat page</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+    <marquee id="scroll" behavior="scroll" direction="left" scrollamount="20">Welcome to online quiz game!!!<img
+            src="images/welcome-colorful-text.gif"></marquee>
+    <div class="main">
+        <img src="images/you-are-welcome.gif" alt="image" class="welcome" style="text-align: center;">
+        <div class="container1">
+            <form onsubmit="submitForm(event)" name="welcome-form">
+                <div class="items">
+                    <p>Enter your name</p>
+                    <br><br><br>
+                    <input type="text" name="name" id="inputbox">
+                    <br><br>
+                    <button type="submit" id="btn1">START</button>
+                </div>
+            </form>
+            <div class="items2">
+                <h3>Instructions</h3>
+                <ul>
+                    <li>You have to answer all questions.</li>
+                    <li>You will get only 1 minute to complete your task.</li>
+                    <li>You will get your marks after anwering all the questions.</li>
+                    <li>Once you starteed you can not skip the game.</li>
+                    <li>Best of luck!!!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/result.js"></script>
+</body>
+
+</html>
