@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript quiz</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="quiz">
+            <div class="head-part">
+            <div class="quiz-head">
+                <h4>Welcome!<span class="name"></span></h4>
+            </div>
+            <div class="timer">
+                <span class="time">00:00</span>
+            </div>
+            </div>
+            <div class="quiz-body">
+               <div id="questions">
+             <!--  <h2>Q1.What is the full form of RAM?</h2>
+                <ul class="option-group">
+                    <li class="option">Read Only Memory</li>
+                    <li class="option">Read Optional Memory</li>
+                    <li class="option">Remove Any Memory</li>
+                    <li class="option">Random Access Memory</li>
+                </ul>
+               </div>--> 
+            </div>
+            <div class="buttons">
+            <button class="btn-next" onclick="next()">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/result.js"></script>
+    <script src="Javascript/timer.js"></script>
+    <script>
+		// Set the time limit in milliseconds (10 minutes = 600000 milliseconds)
+		var timeLimit = 60000;
+
+		// Set the timer to redirect after the time limit
+		setTimeout(function() {
+			window.location.href = "result.html";
+		}, timeLimit);
+	</script>
+</body>
+</html>
